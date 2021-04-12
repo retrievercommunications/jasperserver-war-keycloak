@@ -33,7 +33,7 @@ public class JSKeycloakAuthenticationProvider extends KeycloakAuthenticationProv
 			final Collection<GrantedAuthority> currentAuthorities = currentAuthentication.getAuthorities();
 			return new KeycloakAuthenticationToken(
 					new SimpleKeycloakAccount(new KeycloakUserDetails(currentAccount.getPrincipal().getName(),
-							currentContext, currentAuthorities), currentAccount.getRoles(), currentContext),
+							currentContext, currentAuthorities), currentAccount.getRoles(), currentContext), true,
 					currentAuthorities);
 		}
 		return resultAuthentication;

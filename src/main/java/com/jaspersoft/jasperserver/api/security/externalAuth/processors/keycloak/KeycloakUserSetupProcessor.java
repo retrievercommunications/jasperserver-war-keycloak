@@ -55,7 +55,7 @@ public class KeycloakUserSetupProcessor extends ExternalUserSetupProcessor {
 				final KeycloakUserDetails principal = (KeycloakUserDetails) externalUserDetails;
 				principal.setRoles(userDetails.getRoles());
 				authentication = new KeycloakAuthenticationToken(new SimpleKeycloakAccount(principal,
-						Collections.<String> emptySet(), principal.getKeycloakSecurityContext()),
+						Collections.<String> emptySet(), principal.getKeycloakSecurityContext()), true,
 						userDetails.getAuthorities());
 			} else {
 				authentication = new UsernamePasswordAuthenticationToken(userDetails, userDetails.getPassword(),

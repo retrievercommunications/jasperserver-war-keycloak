@@ -1,22 +1,23 @@
 # jasperserver-war-keycloak
-JasperReports® Server 6.2.0 integration with Keycloak 1.9.1.Final via Spring Security and Open ID (OAuth) protocol.
+JasperReports® Server 6.3.0 integration with Keycloak 11.0.3 via Spring Security and Open ID (OAuth) protocol.
 
 ### Changes
 
-[x] Multi Tenancy
-[ ] SAML
-[ ] Single Sign Out
+ [x] Multi Tenancy
+ 
+ [] SAML
+ 
+ [] Single Sign Out
 
 ### Information
 
 Client Adapter is: Spring Security with OpenID (OAuth)
 
 
+## Requirements
 
-## Requisition
-
-* Keycloak 1.9.1 installed.
-* JasperReports Server 6.2.0 installed.
+* Keycloak 11.0.3 installed.
+* JasperReports Server 6.3.0 installed.
 
 
 ## How to setup
